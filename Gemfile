@@ -66,7 +66,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-
 gem 'devise'
 
 # 下画像保存なgemらしい
