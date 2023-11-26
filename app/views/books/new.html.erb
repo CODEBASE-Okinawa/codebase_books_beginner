@@ -1,6 +1,6 @@
-<%= form_for (@books) do |f| %>
+<%= form_with(model:@book) do |f| %>
     <%= f.label :booktitle %>
-    <%= f.test_field :booktitle %>
+    <%= f.text_field :booktitle %>
     <%= f.label :画像 %><br />
     <%= f.file_field :bookimg, class: "image" %>
 
