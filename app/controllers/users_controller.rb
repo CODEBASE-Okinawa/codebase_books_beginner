@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     # user = params.require(:user).permit(:name, :email, :password,:password_confirmation)
     if @user.save
-      # flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = "Welcome to the codebase books!"
       redirect_to books_path
     else
       render 'new', status: :unprocessable_entity
