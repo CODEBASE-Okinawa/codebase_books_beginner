@@ -1,4 +1,5 @@
-<% @books.each do |books|%>
-    <%= book.bookimg%>
-    <%= book.booktitle%>
+<% @book.each do |books|%>
+    <%= image_tag books.bookimg.to_s%>
+    
+    <%= books.booktitle%>
 <% end %>
